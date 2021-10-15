@@ -15,6 +15,14 @@ body {
   transition: 0.4 ease-out;
 }
 
+.App.rainy { 
+  background-image: url('./assets/Rainyday.jpg');
+}
+
+.App.night { 
+  background-image: url('./assets/nightimage.jpg');
+}
+
 main {
 min-height: 100vh;
 padding: 25px;
@@ -34,8 +42,59 @@ padding: 25px;
   background-color: none;
   border: none;
   outline: none;
-  background-color: rgba(150, 200, 75, .5);
-  border-radius: 5px;
-  margin-top: -25px;
-  box-shadow: 10px 10px rgb(15, 17, 155);
+  background-color: rgba(150, 200, 75, .4);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -40px;
+  box-shadow: 0px 10px rgb(28, 31, 231, .5);
+  font-size: 20px;
+}
+
+/* Click inside searchbox it turns white */
+.search-box .search-bar:focus {
+background-color: rgba(255, 255, 255, 0.4)
+}
+
+.location-box .location {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px, 2px rgba(50, 50, 75, .8);
+}
+
+.location-box .date {
+  color: white;
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px, 2px rgba(50, 50, 75, .8);
+}
+
+.weather-box {
+  text-align: center; 
+}
+
+.weather-box .temp {
+  /* position: relative; */
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(150, 200, 75, .2);
+  border-radius: 16px;
+
+  padding: 25px 25px;
+  color: rgb(190, 73, 73);
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 75, .2);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, .2);
+}
+
+.weather-box .weather {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 6px rgba(50, 50, 75, .2);
 }
