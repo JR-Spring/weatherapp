@@ -23,7 +23,9 @@ function App() {
 }
 
   return (
-  <div className= "App night">
+  //Fix background image to change based on temperature  
+  <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? "App night": 'App') : 'App'}>
+    
     <main>  
       <div className="search-box">
         <input type= "text"
@@ -49,8 +51,8 @@ function App() {
         </div>
       </div>
       ) : ('')}
-        
     </main>
+
   </div>
   );
 }
