@@ -12,7 +12,6 @@ body {
   background-image: url(./assets/Sunnyday.jpg);
   background-size: cover;
   background-position: bottom;
-  transition: 0.4 ease-out;
 }
 
 .App.rainy { 
@@ -28,7 +27,7 @@ min-height: 100vh;
 padding: 25px;
 }
 
-.search-box{
+.search-box {
   width: 100%;
   /* padding: 15px; */
   margin: 0 auto 5px;
@@ -53,18 +52,15 @@ padding: 25px;
 /* Click inside searchbox it turns white */
 .search-box .search-bar:focus {
 background-color: rgba(255, 255, 255, 0.4);
-
 }
 
 .location-box .location {
   color: white;
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 40px;
+  font-weight: 700;
   font-style: italic;
   text-align: center;
-  text-shadow: 2px, 2px rgba(50, 50, 75, .8);
-  
-  
+  text-shadow: 2px, 2px rgba(50, 50, 75, .8); 
 }
 
 .location-box .date {
@@ -74,7 +70,6 @@ background-color: rgba(255, 255, 255, 0.4);
   font-style: italic;
   text-align: center;
   text-shadow: 2px, 2px rgba(50, 50, 75, .8);
-  
 }
 
 .weather-box {
